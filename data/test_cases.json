@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tc_001",
+    "user_message": "What is the capital of France?",
+    "ai_response": "The capital of France is Paris. It has been the capital since the 10th century and is home to landmarks like the Eiffel Tower and the Louvre.",
+    "reference": "Paris is the capital of France."
+  },
+  {
+    "id": "tc_002",
+    "user_message": "How do I reset my password?",
+    "ai_response": "I don't know, please contact support.",
+    "reference": "Go to Settings > Account > Reset Password, enter your email, and follow the link sent to your inbox."
+  },
+  {
+    "id": "tc_003",
+    "user_message": "What are the symptoms of a cold?",
+    "ai_response": "Common cold symptoms include runny nose, sore throat, coughing, sneezing, mild fever, and fatigue. Symptoms usually appear 1-3 days after exposure and last about a week. Rest and staying hydrated helps recovery.",
+    "reference": "Symptoms include runny nose, congestion, sore throat, cough, sneezing, and sometimes mild fever."
+  },
+  {
+    "id": "tc_004",
+    "user_message": "Can you help me write a professional email to reschedule a meeting?",
+    "ai_response": "Sure! Here's a template:\n\nSubject: Request to Reschedule – [Meeting Name]\n\nHi [Name],\n\nI hope you're doing well. Due to a scheduling conflict, I'd like to request rescheduling our meeting originally set for [date/time]. Would [new date/time] work for you?\n\nApologies for any inconvenience and thank you for your flexibility.\n\nBest regards,\n[Your Name]",
+    "reference": "Provide a polite, professional email template to reschedule a meeting with subject line, greeting, reason, proposed new time, and apology."
+  },
+  {
+    "id": "tc_005",
+    "user_message": "What is machine learning?",
+    "ai_response": "Machine learning is when computers learn stuff from data automatically without being told what to do every time.",
+    "reference": "Machine learning is a branch of AI where systems learn patterns from data to make predictions or decisions without being explicitly programmed for each task."
+  },
+  {
+    "id": "tc_006",
+    "user_message": "How do I sort a list in Python?",
+    "ai_response": "You can sort a list in Python using the built-in sort() method or the sorted() function.\n\nExamples:\nmy_list = [3, 1, 4, 1, 5]\nmy_list.sort()  # sorts in place\n\nsorted_list = sorted(my_list)  # returns a new sorted list\n\nFor reverse order, use: my_list.sort(reverse=True)",
+    "reference": "Use list.sort() for in-place sorting or sorted(list) to return a new sorted list. Add reverse=True for descending order."
+  },
+  {
+    "id": "tc_007",
+    "user_message": "I'm feeling really stressed about my exams. What should I do?",
+    "ai_response": "I understand exam stress can feel overwhelming. Here are a few things that can help: break your study material into smaller chunks, take regular short breaks, get enough sleep, and practice deep breathing when anxiety peaks. Talking to a friend or counselor can also help. You've got this!",
+    "reference": "Offer practical stress management tips such as breaking tasks into smaller steps, rest, exercise, and seeking support."
+  },
+  {
+    "id": "tc_008",
+    "user_message": "What is the difference between SQL and NoSQL databases?",
+    "ai_response": "SQL and NoSQL are both types of databases. SQL is better.",
+    "reference": "SQL databases are relational, use structured tables and schemas, and are best for complex queries. NoSQL databases are non-relational, flexible in structure, and better suited for large-scale, unstructured data."
+  },
+  {
+    "id": "tc_009",
+    "user_message": "How many planets are in our solar system?",
+    "ai_response": "There are 8 planets in our solar system: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Pluto was reclassified as a dwarf planet in 2006 by the International Astronomical Union.",
+    "reference": "There are 8 planets in our solar system. Pluto was reclassified as a dwarf planet in 2006."
+  },
+  {
+    "id": "tc_010",
+    "user_message": "What should I eat to lose weight?",
+    "ai_response": "For weight loss, focus on a balanced diet rich in vegetables, lean proteins like chicken and fish, whole grains, and healthy fats. Avoid processed foods, sugary drinks, and excessive snacking. Portion control and staying hydrated are also important. It's best to consult a nutritionist for a personalized plan.",
+    "reference": "Recommend a balanced diet with vegetables, lean protein, and whole grains while avoiding processed food and sugary drinks. Suggest professional guidance."
+  }
+]
