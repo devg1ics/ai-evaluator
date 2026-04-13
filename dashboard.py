@@ -45,19 +45,20 @@ with st.sidebar:
 # ── Load results ──────────────────────────────────────────────────────────────
 results_path = Path("results/eval_results.csv")
 
-if not results_path.exists():
+if uploaded_csv:
+    try:
+        df = pd.read_csv(uploaded_csv, encoding="utf-8")
+    except Exception as e:
+        st.error(f"Could not read CSV: {e}")
+        st.stop()
+elif results_path.exists():
+    try:
+        df = pd.read_csv(results_path, encoding="utf-8")
+    except Exception as e:
+        st.error(f"Could not read CSV: {e}")
+        st.stop()
+else:
     st.info("No results yet. Upload a CSV from the sidebar or run `python main.py` first.")
-    st.stop()
-
-df = pd.read_csv(results_path)
-for _dim in DIMS:
-    if _dim in df.columns:
-        df[_dim] = pd.to_numeric(df[_dim], errors="coerce").fillna(0).astype(int)
-
-expected_cols = ["helpfulness", "accuracy", "coherence", "tone", "overall"]
-missing = [c for c in expected_cols if c not in df.columns]
-if missing:
-    st.error(f"Uploaded CSV is missing columns: {missing}\n\nMake sure you upload the file from your results/ folder.")
     st.stop()
 
 # ── Top metrics ───────────────────────────────────────────────────────────────
