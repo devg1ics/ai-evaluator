@@ -146,7 +146,7 @@ def export_pdf(results_path: str, output_dir: str = "results") -> str:
 
     # Title
     title_style = ParagraphStyle("title", parent=styles["Title"], fontSize=20, spaceAfter=6)
-    story.append(Paragraph("AI Response Evaluation Report", title_style))
+    story.append(Paragraph("EvalAI - Evaluation Report", title_style))
     story.append(Paragraph(f"Total responses evaluated: <b>{len(df)}</b>", styles["Normal"]))
     story.append(Spacer(1, 0.2*inch))
 

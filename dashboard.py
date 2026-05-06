@@ -5,8 +5,8 @@ import plotly.graph_objects as go
 from pathlib import Path
 from evaluator.exporter import export_excel, export_pdf
 
-st.set_page_config(page_title="AI Evaluator", layout="wide")
-st.title("AI Response Evaluator Dashboard")
+st.set_page_config(page_title="EvalAI", layout="wide")
+st.title("EvalAI")
 
 DIMS = ["helpfulness", "accuracy", "coherence", "tone", "overall"]
 

@@ -1,4 +1,4 @@
-# AI Response Evaluator
+# EvalAI
 
 A Python tool that uses **LLM-as-a-judge** to automatically score AI responses across five quality dimensions. Feed it a set of (question, response, reference) triples and get back structured scores, a summary report, and an interactive dashboard.
 
@@ -49,7 +49,7 @@ Scores are **1–5**. A score of **4 or above** counts as a Pass.
 ## Project Structure
 
 ```
-ai-evaluator/
+evalai/
 ├── .env                        # API key and model config (never commit this)
 ├── requirements.txt            # Python dependencies
 ├── main.py                     # CLI entry point — runs eval + exports reports
